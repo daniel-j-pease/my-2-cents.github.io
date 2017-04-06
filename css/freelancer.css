@@ -575,3 +575,7 @@ fieldset[disabled] .btn-success.active {
 #contact {
   background-color: rgba(170,247,239,1);
 }
+#everyone {
+  font-weight: 80px;
+  color: forestgreen;
+}
