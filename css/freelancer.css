@@ -272,7 +272,7 @@ section.success img {
 #portfolio .portfolio-item .portfolio-link {
   display: block;
   position: relative;
-  max-width: 400px;
+  max-width: 300px;
   margin: 0 auto;
 }
 #portfolio .portfolio-item .portfolio-link .caption {
@@ -578,4 +578,7 @@ fieldset[disabled] .btn-success.active {
 #everyone {
   font-weight: 80px;
   color: forestgreen;
+}
+.team-member {
+  text-align: center;
 }
