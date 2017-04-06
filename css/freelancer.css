@@ -5,7 +5,7 @@
  */
 
 body {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family:'Cinzel', serif;
   overflow-x: hidden;
 }
 p {
@@ -27,14 +27,14 @@ h2,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family:'Cinzel', serif;
   text-transform: uppercase;
   font-weight: 700;
 }
 h3 {
   font-size: 24px;
   margin-bottom: 20px;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family:'Cinzel', serif;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -80,19 +80,40 @@ hr.star-primary:after {
 header {
   text-align: center;
   background: #B5E2FA;
-  color: #2E3138;
+  color: rgb(104,222,168);
 }
 header .container {
   padding-top: 100px;
   padding-bottom: 50px;
 }
-header img {
+
+header .container span {
+  color: rgb(170,247,239);
+}
+
+.first-screen {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('../img/slider1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
+
+.image-overlay {
+  background-color: rgba(0,0,0,0.4);
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+}
+
+/*header img {
   display: block;
   margin: 0 auto 20px;
-}
+}*/
 header .intro-text .name {
   display: block;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family:'Cinzel', serif;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 2em;
@@ -114,8 +135,8 @@ header .intro-text .skills {
   }
 }
 .navbar-custom {
-  background: #4E3D42;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: rgba(104,222,168,0.4);
+  font-family:'Cinzel', serif;
   text-transform: uppercase;
   font-weight: 700;
   border: none;
@@ -125,6 +146,11 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-brand {
   color: white;
+}
+.navbar-custom .navbar-brand img {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
@@ -196,8 +222,37 @@ section h2 {
   font-size: 3em;
 }
 section.success {
-  background: #326273;
+  background: rgba(166,234,199,1);
   color: white;
+}
+section.success img {
+  width: 30vw;
+}
+.box-holder {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.littleBox {
+  height:20vh;
+  width: 20vw;
+  margin: 10px;
+}
+.littleBox p {
+  visibility: hidden;
+}
+#hands {
+  background-image: url('../img/hands.jpeg');
+  background-size: cover;
+}
+#statue {
+  background-image: url('../img/statue-01.png');
+  background-size: cover;
+}
+#water {
+  background-image: url('../img/water.jpg');
+  background-size: cover;
 }
 @media (max-width: 767px) {
   section {
@@ -205,6 +260,9 @@ section.success {
   }
   section.first {
     padding-top: 75px;
+  }
+  .box-holder {
+    flex-direction: column;
   }
 }
 #portfolio .portfolio-item {
@@ -515,5 +573,5 @@ fieldset[disabled] .btn-success.active {
 }
 
 #contact {
-  background-color: #B5E2FA
+  background-color: rgba(170,247,239,1);
 }
