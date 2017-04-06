@@ -582,3 +582,6 @@ fieldset[disabled] .btn-success.active {
 .team-member {
   text-align: center;
 }
+.team-title-h2 {
+  margin-bottom: 25px;
+}
