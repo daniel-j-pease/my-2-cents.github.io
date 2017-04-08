@@ -23,12 +23,7 @@ $(function() {
             $.ajax({
                 url: "//formspree.io/indefinitelee@gmail.com",
                 type: "POST",
-                data: {
-                    name: name,
-                    phone: phone,
-                    email: email,
-                    message: message
-                },
+                data: $(this).serialize(),
                 datatype: 'json',
                 cache: false,
                 success: function() {
