@@ -210,13 +210,12 @@
 
     <!-- Form submit test with formspree -->
 
-    <form action="http://formspree.io/indefinitelee@gmail.com" method="POST">
+<!--     <form action="http://formspree.io/indefinitelee@gmail.com" method="POST">
       <input type="email" name="_replyto" placeholder="email">
       <textarea name="body" placeholder="body"></textarea>
       <input type="submit" value="Send">
-    </form>
+    </form> -->
 
-    <form action="./mail/contact_me.php" method="POST">
     <section id="contact">
         <div class="container">
             <div class="row">
@@ -229,7 +228,7 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                     <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" id="contactForm" novalidate>
+                <form action="http://formspree.io/indefinitelee@gmail.com" method="POST" name="sentMessage" id="contactForm" novalidate>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Name</label>
@@ -265,12 +264,11 @@
                                 <button type="submit" class="btn btn-success btn-lg">Send</button>
                             </div>
                         </div>
-                    </form>
+                </form>
                 </div>
             </div>
         </div>
     </section>
-    </form>
 
     <!-- Footer -->
     <footer class="text-center">
@@ -280,7 +278,7 @@
                     <div class="footer-col col-md-5 col-md-offset-1">
                         <h3>Location</h3>
                         <p>10 East 21st Street
-                        <p>Random chairs and seats</p>
+                        <p>Random tables and chairs</p>
                           <p>New York, NY 10013</p>
                     </div>
                     <div class="footer-col col-md-6">
