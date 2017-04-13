@@ -4,7 +4,6 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
-
 body {
   font-family:'Cinzel', serif;
   overflow-x: hidden;
@@ -585,8 +584,4 @@ fieldset[disabled] .btn-success.active {
 }
 .team-title-h2 {
   margin-bottom: 25px;
-}
-
-#kammug {
-  width: 95%;
 }
